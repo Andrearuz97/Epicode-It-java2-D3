@@ -17,7 +17,7 @@ public class ParallelSum {
 		}
 
 		for (Thread thread : threads) {
-			thread.join(); // Attendi la terminazione di ogni thread figlio
+			thread.join();
 		}
 
 		int totalSum = 0;
@@ -33,7 +33,7 @@ public class ParallelSum {
 		Random random = new Random();
 
 		for (int i = 0; i < size; i++) {
-			array[i] = random.nextInt(100); // Genera un numero casuale compreso tra 0 e 99
+			array[i] = random.nextInt(100);
 		}
 
 		return array;
